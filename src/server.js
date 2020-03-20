@@ -1,10 +1,13 @@
 import express, { json } from 'express';
 import mongoose from 'mongoose';
 import routes from './routes';
+import config from './config';
+
+const { mongoURL } = config.mongoDB;
 
 const server = express();
 
-mongoose.connect('mongodb+srv://devhouse:devhouse@devhouse-xszia.mongodb.net/devhouse?retryWrites=true&w=majority', {
+mongoose.connect(mongoURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
