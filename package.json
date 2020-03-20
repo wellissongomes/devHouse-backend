@@ -1,0 +1,11 @@
+{
+  "name": "devHouse-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wellissongomes/devHouse-backend",
+  "author": "Wellisson Gomes <wellisson.cacho@ccc.ufcg.edu.br>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
