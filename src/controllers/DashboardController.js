@@ -6,7 +6,7 @@ const DashboardController = {
 
         const houses = await House.find({ user: user_id });
 
-        return res.json(houses)
+        return res.json(houses);
     }
 };
 
