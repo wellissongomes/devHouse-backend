@@ -1,6 +1,6 @@
 import House from '../models/House';
 
-class HouseController {
+const HouseController = {
     async store(req, res) {
         const { filename } = req.file;
         const { description, price, location, available } = req.body;
@@ -19,4 +19,4 @@ class HouseController {
     }
 };
 
-export default new HouseController();
+export default HouseController;
