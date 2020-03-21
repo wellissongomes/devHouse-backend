@@ -1,7 +1,8 @@
-import express, { json } from 'express';
+import express, { json, static } from 'express';
 import mongoose from 'mongoose';
 import routes from './routes';
 import config from './config/db';
+import path from 'path';
 
 const { mongoURL } = config.mongoDB;
 
@@ -12,6 +13,7 @@ mongoose.connect(mongoURL, {
     useUnifiedTopology: true
 });
 
+server.use('/files', static(path.resolve(__dirname, '../uploads')));
 server.use(json());
 server.use(routes);
 
