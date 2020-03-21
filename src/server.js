@@ -1,7 +1,7 @@
 import express, { json } from 'express';
 import mongoose from 'mongoose';
 import routes from './routes';
-import config from './config';
+import config from './config/db';
 
 const { mongoURL } = config.mongoDB;
 
