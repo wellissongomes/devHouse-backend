@@ -1,2 +1,2 @@
 # devHouse-backend
-Uma simples API para gerenciar aluguéis de casas.
+Uma simplória API para o gerenciamento de aluguéis de domicílios.
